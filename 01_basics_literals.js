@@ -6,4 +6,15 @@ const object = new String("This is an object declared as string");
 
 //// Window is the absolute parent object of the browser
 // console.log(window);
-// console.log(window.navigator);
+
+// Object literal
+const book1 = {
+  title: "Book One",
+  author: "John Doe",
+  year: "2013",
+  getSummary: function() {
+    return `${this.title} was written by ${this.author} in ${this.year}.`;
+  }
+};
+
+console.log(book1.getSummary());
